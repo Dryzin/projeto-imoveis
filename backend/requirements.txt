@@ -1,7 +1,7 @@
-# --- Configuração do Frontend (React) ---
-  - type: static
-    name: imoveis-frontend
-    env: static
-    rootDir: front-end
-    buildCommand: "npm install && npm run build"
-    publishPath: dist # ou 'build', dependendo da sua versão do Vite/React
+flask
+flask-cors
+joblib
+numpy
+pandas
+scikit-learn
+gunicorn
