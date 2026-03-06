@@ -1,0 +1,13 @@
+services:
+  # --- Configuração do Backend (Flask) ---
+  - type: web
+    name: api-imoveis-backend
+    env: python
+    region: ohio
+    plan: free
+    rootDir: backend  # <--- O segredo está aqui: ele foca na pasta backend
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12
