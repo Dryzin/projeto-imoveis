@@ -25,7 +25,7 @@ export default function Home() {
 
     try {
       // conexão com a API Flask criada na Parte B 
-      const response = await fetch('http://localhost:5000/predict', {
+      const response = await fetch('https://projeto-imoveis-t5xu.onrender.com/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
